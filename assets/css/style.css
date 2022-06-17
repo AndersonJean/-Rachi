@@ -1,0 +1,91 @@
+/* components */
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo h1 a {
+  color: #293145;
+  font-size: 2.4rem;
+  line-height: 3.24rem;
+}
+header .menu_navegacao {
+  display: flex;
+  align-items: center;
+}
+header .menu_navegacao nav ul {
+  display: flex;
+  list-style: none;
+}
+header .menu_navegacao nav li a {
+  font-size: 1.8rem;
+  line-height: 2.78rem;
+  color: #6E7275;
+  display: block;
+  padding: 1.5rem;
+}
+
+.conteudoHero {
+  border: 1px solid red;
+}
+.conteudoHero main {
+  display: flex;
+}
+.conteudoHero main .conteudoTexto {
+  flex: 1;
+  border: 1px solid blue;
+}
+.conteudoHero main .conteudoImagem {
+  flex: 1;
+  background: url(/assets/images/primary.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteudoHero::after {
+  content: "aaa ";
+  display: block;
+  background-color: #EFF8FF;
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  z-index: -999;
+}
+
+button {
+  background-color: #0F9AFE;
+  color: #FFFFFF;
+  box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  display: flex;
+  padding: 1.6rem 3.6rem;
+  gap: 1rem;
+  border-radius: 5rem;
+  border: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

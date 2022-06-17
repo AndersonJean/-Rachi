@@ -1,0 +1,29 @@
+.conteudoHero{
+    border: 1px solid red;
+
+    main{
+        display: flex;
+
+        .conteudoTexto{
+            flex: 1;
+            border: 1px solid blue;
+        }
+
+        .conteudoImagem{
+            flex: 1;
+            background: url(/assets/images/primary.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+.conteudoHero::after{
+    content: 'aaa ';
+    display: block;
+    background-color: $background-section;
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;z-index: -999;
+}

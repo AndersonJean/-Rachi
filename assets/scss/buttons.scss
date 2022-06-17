@@ -1,0 +1,10 @@
+button{
+    background-color: $background-dest;
+    color: $font-text-color;
+    box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+    display: flex;
+    padding: 1.6rem 3.6rem;
+    gap: 1rem;
+    border-radius: 5rem;
+    border: 0;
+}
