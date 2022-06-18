@@ -18,9 +18,15 @@ html, body {
 .container {
   max-width: 120rem;
   margin: auto;
+  padding-inline: 2%;
 }
 
 header {
+  height: 7rem;
+  border: 1px solid red;
+  line-height: 7rem;
+}
+header .container {
   display: flex;
   justify-content: space-between;
 }
@@ -32,6 +38,7 @@ header .logo h1 a {
   color: #293145;
   font-size: 2.4rem;
   line-height: 3.24rem;
+  margin-left: 1.2rem;
 }
 header .menu_navegacao {
   display: flex;
@@ -50,31 +57,27 @@ header .menu_navegacao nav li a {
 }
 
 .conteudoHero {
-  border: 1px solid red;
+  background: #EFF8FF;
 }
 .conteudoHero main {
   display: flex;
 }
 .conteudoHero main .conteudoTexto {
   flex: 1;
-  border: 1px solid blue;
+  border: 1px solid red;
+}
+.conteudoHero main .conteudoTexto h2 {
+  color: #293145;
+  font-size: 4.8rem;
+  line-height: 6.048rem;
 }
 .conteudoHero main .conteudoImagem {
   flex: 1;
-  background: url(/assets/images/primary.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  border: 1px solid red;
 }
-
-.conteudoHero::after {
-  content: "aaa ";
-  display: block;
-  background-color: #EFF8FF;
+.conteudoHero main .conteudoImagem img {
   width: 100%;
-  height: 600px;
-  position: absolute;
-  top: 0;
-  z-index: -999;
+  object-fit: cover;
 }
 
 button {
@@ -86,6 +89,7 @@ button {
   gap: 1rem;
   border-radius: 5rem;
   border: 0;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */
